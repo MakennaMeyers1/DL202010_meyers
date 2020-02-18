@@ -1,0 +1,129 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Feb 13 13:50:19 2020
+# Process ID: 7992
+# Current directory: H:/ELC2137/DL202010_meyers/Lab05 Vivado/Lab05_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16864 H:\ELC2137\DL202010_meyers\Lab05 Vivado\Lab05_project\Lab05_project.xpr
+# Log file: H:/ELC2137/DL202010_meyers/Lab05 Vivado/Lab05_project/vivado.log
+# Journal file: H:/ELC2137/DL202010_meyers/Lab05 Vivado/Lab05_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {H:/ELC2137/DL202010_meyers/Lab05 Vivado/Lab05_project/Lab05_project.xpr}
+launch_simulation -simset [get_filesets sim_2 ]
+source fulladder_test.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source fulladder_test.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source fulladder_test.tcl
+add_bp {H:/ELC2137/DL202010_meyers/Lab05 Vivado/Lab05_project/Lab05_project.srcs/sim_2/new/fulladder_test.sv} 21
+remove_bps -file {H:/ELC2137/DL202010_meyers/Lab05 Vivado/Lab05_project/Lab05_project.srcs/sim_2/new/fulladder_test.sv} -line 21
+add_bp {H:/ELC2137/DL202010_meyers/Lab05 Vivado/Lab05_project/Lab05_project.srcs/sim_2/new/fulladder_test.sv} 21
+remove_bps -file {H:/ELC2137/DL202010_meyers/Lab05 Vivado/Lab05_project/Lab05_project.srcs/sim_2/new/fulladder_test.sv} -line 21
+add_bp {H:/ELC2137/DL202010_meyers/Lab05 Vivado/Lab05_project/Lab05_project.srcs/sim_2/new/fulladder_test.sv} 21
+remove_bps -file {H:/ELC2137/DL202010_meyers/Lab05 Vivado/Lab05_project/Lab05_project.srcs/sim_2/new/fulladder_test.sv} -line 21
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source fulladder_test.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source fulladder_test.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+launch_simulation -simset [get_filesets sim_2 ]
+source fulladder_test.tcl
+launch_simulation
+source halfadder_test.tcl
+close_sim
+launch_simulation
+source halfadder_test.tcl
+current_sim simulation_6
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source fulladder_test.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source fulladder_test.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source fulladder_test.tcl
+set_property is_enabled true [get_files  {{H:/ELC2137/DL202010_meyers/Lab05 Vivado/Lab05_project/Lab05_project.srcs/sources_1/new/addsub.sv}}]
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+export_ip_user_files -of_objects  [get_files {{H:/ELC2137/DL202010_meyers/Lab05 Vivado/Lab05_project/Lab05_project.srcs/sources_1/new/addsub.sv}}] -no_script -reset -force -quiet
+remove_files  {{H:/ELC2137/DL202010_meyers/Lab05 Vivado/Lab05_project/Lab05_project.srcs/sources_1/new/addsub.sv}}
+launch_simulation -simset [get_filesets sim_2 ]
+source fulladder_test.tcl
+current_sim simulation_8
+close_sim
+launch_simulation
+source halfadder_test.tcl
+set_property SOURCE_SET sources_1 [get_filesets sim_3]
+close [ open {H:/ELC2137/DL202010_meyers/Lab05 Vivado/Lab05_project/Lab05_project.srcs/sim_3/new/addsub.sv} w ]
+add_files -fileset sim_3 {{H:/ELC2137/DL202010_meyers/Lab05 Vivado/Lab05_project/Lab05_project.srcs/sim_3/new/addsub.sv}}
+reorder_files -fileset sim_3 -before {H:/ELC2137/DL202010_meyers/Lab05 Vivado/Lab05_project/Lab05_project.srcs/sim_3/new/addsub_test.sv} {{H:/ELC2137/DL202010_meyers/Lab05 Vivado/Lab05_project/Lab05_project.srcs/sim_3/new/addsub.sv}}
+reorder_files -fileset sim_3 -before {H:/ELC2137/DL202010_meyers/Lab05 Vivado/Lab05_project/Lab05_project.srcs/sim_3/new/addsub.sv} {{H:/ELC2137/DL202010_meyers/Lab05 Vivado/Lab05_project/Lab05_project.srcs/sim_3/new/addsub.sv}}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{H:/ELC2137/DL202010_meyers/Lab05 Vivado/Lab05_project/Lab05_project.srcs/sim_3/new/addsub_test.sv}}
+set_property SOURCE_SET sources_1 [get_filesets sim_3]
+add_files -fileset sim_3 -norecurse {{H:/ELC2137/DL202010_meyers/Lab05 Vivado/Lab05_project/Lab05_project.srcs/sim_3/new/addsub.sv}}
+set_property is_enabled false [get_files -of_objects [get_filesets sim_1] {{H:/ELC2137/DL202010_meyers/Lab05 Vivado/Lab05_project/Lab05_project.srcs/sim_3/new/addsub_test.sv}}]
+set_property is_enabled true [get_files -of_objects [get_filesets sim_1] {{H:/ELC2137/DL202010_meyers/Lab05 Vivado/Lab05_project/Lab05_project.srcs/sim_3/new/addsub_test.sv}}]
+move_files [get_files  {{H:/ELC2137/DL202010_meyers/Lab05 Vivado/Lab05_project/Lab05_project.srcs/sim_3/new/addsub.sv}}]
+set_property is_enabled true [get_files -of_objects [get_filesets sim_3] {{H:/ELC2137/DL202010_meyers/Lab05 Vivado/Lab05_project/Lab05_project.srcs/sim_3/new/addsub_test.sv}}]
+current_fileset -simset [ get_filesets sim_3 ]
+launch_simulation -simset [get_filesets sim_3 ]
+source fulladder.tcl
+current_sim simulation_12
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source fulladder_test.tcl
+current_sim simulation_14
+close_sim
+launch_simulation -simset [get_filesets sim_3 ]
+source fulladder.tcl
+close_sim
+current_sim simulation_15
+launch_simulation -simset [get_filesets sim_3 ]
+source fulladder.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_3 ]
+source fulladder.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_3 ]
+source fulladder.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_3 ]
+source fulladder.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_3 ]
+source fulladder.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_3 ]
+source fulladder.tcl
+close_sim
+current_sim simulation_15
+launch_simulation -simset [get_filesets sim_3 ]
+source fulladder.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_3 ]
+current_sim simulation_15
+launch_simulation -simset [get_filesets sim_3 ]
+source fulladder.tcl
+add_bp {H:/ELC2137/DL202010_meyers/Lab05 Vivado/Lab05_project/Lab05_project.srcs/sources_1/new/fulladder.sv} 29
+remove_bps -file {H:/ELC2137/DL202010_meyers/Lab05 Vivado/Lab05_project/Lab05_project.srcs/sources_1/new/fulladder.sv} -line 29
+add_bp {H:/ELC2137/DL202010_meyers/Lab05 Vivado/Lab05_project/Lab05_project.srcs/sources_1/new/fulladder.sv} 29
+remove_bps -file {H:/ELC2137/DL202010_meyers/Lab05 Vivado/Lab05_project/Lab05_project.srcs/sources_1/new/fulladder.sv} -line 29
+current_sim simulation_15
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source fulladder_test.tcl
+add_bp {H:/ELC2137/DL202010_meyers/Lab05 Vivado/Lab05_project/Lab05_project.srcs/sim_2/new/fulladder_test.sv} 19
+remove_bps -file {H:/ELC2137/DL202010_meyers/Lab05 Vivado/Lab05_project/Lab05_project.srcs/sim_2/new/fulladder_test.sv} -line 19
+close_sim
+current_sim simulation_24
+close_sim
+close_sim

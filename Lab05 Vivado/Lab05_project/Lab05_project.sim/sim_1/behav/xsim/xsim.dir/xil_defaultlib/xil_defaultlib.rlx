@@ -1,0 +1,8 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+H:/ELC2137/DL202010_meyers/Lab05 Vivado/Lab05_project/Lab05_project.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+H:/ELC2137/DL202010_meyers/Lab05 Vivado/Lab05_project/Lab05_project.srcs/sim_1/new/halfadder_test.sv,1581455831,systemVerilog,,,,halfadder_test,,,,,,,,
+H:/ELC2137/DL202010_meyers/Lab05 Vivado/Lab05_project/Lab05_project.srcs/sources_1/new/fulladder.sv,1581625481,systemVerilog,,H:/ELC2137/DL202010_meyers/Lab05 Vivado/Lab05_project/Lab05_project.srcs/sim_1/new/halfadder_test.sv,,fulladder,,,,,,,,
+H:/ELC2137/DL202010_meyers/Lab05 Vivado/Lab05_project/Lab05_project.srcs/sources_1/new/halfadder.sv,1581459235,systemVerilog,,H:/ELC2137/DL202010_meyers/Lab05 Vivado/Lab05_project/Lab05_project.srcs/sources_1/new/fulladder.sv,,halfadder,,,,,,,,
