@@ -1,0 +1,123 @@
+% Created: 2020-01-10, John Miller
+
+%==========================================================
+%=========== Document Setup  ==============================
+
+% Formatting defined by class file
+\documentclass[11pt]{article}
+
+% ---- Document formatting ----
+\usepackage[margin=1in]{geometry}	% Narrower margins
+\usepackage{booktabs}				% Nice formatting of tables
+\usepackage{graphicx}				% Ability to include graphics
+
+%\setlength\parindent{0pt}	% Do not indent first line of paragraphs 
+\usepackage[parfill]{parskip}		% Line space b/w paragraphs
+%	parfill option prevents last line of pgrph from being fully justified
+
+% Parskip package adds too much space around titles, fix with this
+\RequirePackage{titlesec}
+\titlespacing\section{0pt}{8pt plus 4pt minus 2pt}{3pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{4pt plus 4pt minus 2pt}{-2pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{2pt plus 4pt minus 2pt}{-6pt plus 2pt minus 2pt}
+
+% ---- Hyperlinks ----
+\usepackage[colorlinks=true,urlcolor=blue]{hyperref}	% For URL's. Automatically links internal references.
+
+% ---- Code listings ----
+\usepackage{listings} 					% Nice code layout and inclusion
+\usepackage[usenames,dvipsnames]{xcolor}	% Colors (needs to be defined before using colors)
+
+% Define custom colors for listings
+\definecolor{listinggray}{gray}{0.98}		% Listings background color
+\definecolor{rulegray}{gray}{0.7}			% Listings rule/frame color
+
+% Style for Verilog
+\lstdefinestyle{Verilog}{
+	language=Verilog,					% Verilog
+	backgroundcolor=\color{listinggray},	% light gray background
+	rulecolor=\color{blue}, 			% blue frame lines
+	frame=tb,							% lines above & below
+	linewidth=\columnwidth, 			% set line width
+	basicstyle=\small\ttfamily,	% basic font style that is used for the code	
+	breaklines=true, 					% allow breaking across columns/pages
+	tabsize=3,							% set tab size
+	commentstyle=\color{gray},	% comments in italic 
+	stringstyle=\upshape,				% strings are printed in normal font
+	showspaces=false,					% don't underscore spaces
+}
+
+% How to use: \Verilog[listing_options]{file}
+\newcommand{\Verilog}[2][]{%
+	\lstinputlisting[style=Verilog,#1]{#2}
+}
+
+
+
+
+%======================================================
+%=========== Body  ====================================
+\begin{document}
+
+\title{ELC 2137 Lab 6: MUX and 7-segment Decoder}
+\author{Trevor Jackson, Carlos Hernandez, and Makenna Meyers}
+
+\maketitle
+
+
+\section*{Summary}
+
+SUMMARY
+
+\section*{Q\&A}
+
+\begin{enumerate}
+	\item How many wires are connected to the 7-segment display?
+	
+	ANSWER
+	
+	\item If the segments were not all connected together, how many wires would there have to be?
+
+    ANSWER
+    
+    \item Why do we prefer the current method vs. separating all of the segments?
+    
+    ANSWER
+    
+    \item List the errors found during simulation. What does this tell you about why we run simulations?
+    
+    ANSWER
+	
+\end{enumerate}
+
+\section*{Results}
+
+\begin{figure}\centering
+	\includegraphics[width=0.8\textwidth,trim=0cm 11cm 0cm 9.5cm,clip]{picture1}
+	\caption{First Digit Value}
+	\label{fig:picture1}	
+\end{figure}
+
+\begin{figure}\centering
+	\includegraphics[width=0.8\textwidth,trim=0cm 7.5cm 0cm 7.5cm,clip]{picture2}
+	\caption{Second Digit Value}
+	\label{fig:picture2}	
+\end{figure}
+
+\clearpage
+
+\section*{Code}
+
+\Verilog[caption=Half Adder Code,label=code:half adder]{halfadder.sv}
+
+\Verilog[caption=Half Adder Test Bench Code,label=code:half adder test bench]{halfadder_test.sv}
+
+\Verilog[caption=Full Adder Code,label=code:full adder]{fulladder.sv}
+
+\Verilog[caption=Full Adder Test Bench Code,label=code:full adder test bench]{fulladder_test.sv}
+
+\Verilog[caption=Adder/Subtractor Code,label=code:adder/subtractor]{addersub2.sv}
+
+\Verilog[caption=Adder/Subtractor Test Bench Code,label=code:adder/subtractor test bench]{addersub_test2.sv}
+
+\end{document}

@@ -1,0 +1,102 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 11440
+License: Customer
+
+Current time: 	Mon Feb 24 10:27:06 CST 2020
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 518 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/XilinxVivado/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/XilinxVivado/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	MEYERSM
+User home directory: C:/Users/MEYERSM
+User working directory: H:/ELC2137/DL202010_meyers/lab06_project
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/XilinxVivado/Vivado
+HDI_APPROOT: C:/XilinxVivado/Vivado/2018.3
+RDI_DATADIR: C:/XilinxVivado/Vivado/2018.3/data
+RDI_BINDIR: C:/XilinxVivado/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/MEYERSM/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/MEYERSM/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/MEYERSM/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/XilinxVivado/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	H:/ELC2137/DL202010_meyers/lab06_project/vivado.log
+Vivado journal file location: 	H:/ELC2137/DL202010_meyers/lab06_project/vivado.jou
+Engine tmp dir: 	H:/ELC2137/DL202010_meyers/lab06_project/.Xil/Vivado-11440-ROG-305-12
+
+Xilinx Environment Variables
+----------------------------
+VSSDK140Install: C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\
+XILINX: C:/XilinxVivado/Vivado/2018.3/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2100@lm-xilinx.ecs.baylor.edu
+XILINX_DSP: C:/XilinxVivado/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/XilinxVivado/Vivado/2018.3
+XILINX_SDK: C:/XilinxVivado/SDK/2018.3
+XILINX_VIVADO: C:/XilinxVivado/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/XilinxVivado/Vivado/2018.3
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 512 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// WARNING: HEventQueue.dispatchEvent() is taking  1415 ms.
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: H:\ELC2137\DL202010_meyers\lab06_project\lab06_project.xpr. Version: Vivado v2018.3 
+// WARNING: HEventQueue.dispatchEvent() is taking  1600 ms.
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project H:/ELC2137/DL202010_meyers/lab06_project/lab06_project.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 512 MB. GUI used memory: 42 MB. Current time: 2/24/20, 10:27:08 AM CST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project H:/ELC2137/DL202010_meyers/lab06_project/lab06_project.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/MEYERSM/Desktop/lab06_project' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// HMemoryUtils.trashcanNow. Engine heap size: 535 MB. GUI used memory: 39 MB. Current time: 2/24/20, 10:27:23 AM CST

@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Feb 24 10:22:29 2020
+# Process ID: 11440
+# Current directory: H:/ELC2137/DL202010_meyers/lab06_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2872 H:\ELC2137\DL202010_meyers\lab06_project\lab06_project.xpr
+# Log file: H:/ELC2137/DL202010_meyers/lab06_project/vivado.log
+# Journal file: H:/ELC2137/DL202010_meyers/lab06_project\vivado.jou
+#----------------------------------------------------------CRstart_gui
+open_project H:/ELC2137/DL202010_meyers/lab06_project/lab06_project.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/MEYERSM/Desktop/lab06_project' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+oject' since last savScanning sources...
+FinFinished scanning sourcINFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+ed

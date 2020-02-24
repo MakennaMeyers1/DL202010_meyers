@@ -1,0 +1,10 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/MEYERSM/Desktop/lab06_project/lab06_project.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/MEYERSM/Desktop/lab06_project/lab06_project.srcs/sim_1/new/mux2_4b_test.sv,1582058995,systemVerilog,,,,mux2_4b_test,,,,,,,,
+C:/Users/MEYERSM/Desktop/lab06_project/lab06_project.srcs/sim_1/new/sseg1_test.sv,1582064338,systemVerilog,,,,sseg1_test,,,,,,,,
+C:/Users/MEYERSM/Desktop/lab06_project/lab06_project.srcs/sim_2/new/sseg_decoder_test.sv,1582060133,systemVerilog,,C:/Users/MEYERSM/Desktop/lab06_project/lab06_project.srcs/sim_1/new/sseg1_test.sv,,sseg_decoder_test,,,,,,,,
+C:/Users/MEYERSM/Desktop/lab06_project/lab06_project.srcs/sources_1/new/mux2_4b.sv,1582058693,systemVerilog,,C:/Users/MEYERSM/Desktop/lab06_project/lab06_project.srcs/sources_1/new/sseg_decoder.sv,,mux2_4b,,,,,,,,
+C:/Users/MEYERSM/Desktop/lab06_project/lab06_project.srcs/sources_1/new/sseg_decoder.sv,1582059840,systemVerilog,,C:/Users/MEYERSM/Desktop/lab06_project/lab06_project.srcs/sim_2/new/sseg_decoder_test.sv,,sseg_decoder,,,,,,,,
