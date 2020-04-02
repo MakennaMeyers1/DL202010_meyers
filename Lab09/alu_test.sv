@@ -31,5 +31,9 @@ module alu_test ();
         op = 4;
         in0 = 1;
         in1 = 1;
+        #10
+        op = 5; //default
+        in0 = 8;
+        in1 = 6;
     end
 endmodule
