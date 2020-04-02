@@ -10,9 +10,9 @@ module top_lab9(
 );
     wire [7:0]reg1_out, reg2_out, alu_out;
     
-    register #(.N(1)) reg1(.clk(clk), .rst(btnC), .en(btnD), .D(sw[7:0]), .Q(reg1_out));
+    register #(.N(8)) reg1(.clk(clk), .rst(btnC), .en(btnD), .D(sw[7:0]), .Q(reg1_out));
     alu #(.N(8)) a(.in0(sw[7:0]), .in1(reg1_out), .op(sw[11:8]), .out(alu_out));
-    register #(.N(1)) reg2(.clk(clk), .rst(btnC), .en(btnU), .D(alu_out), .Q(reg2_out));
+    register #(.N(8)) reg2(.clk(clk), .rst(btnC), .en(btnU), .D(alu_out), .Q(reg2_out));
     
     assign led [7:0] = reg1_out; 
     assign led [15:8] = reg2_out;
