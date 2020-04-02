@@ -1,0 +1,56 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Apr  2 07:30:47 2020
+# Process ID: 34320
+# Current directory: C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/Lab09_ALU_with_Input_Register
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent35564 C:\Users\maken\Documents\ELC Lab 2137\DL202010_meyers\Lab09\Lab09_ALU_with_Input_Register\Lab09_ALU_with_Input_Register.xpr
+# Log file: C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/Lab09_ALU_with_Input_Register/vivado.log
+# Journal file: C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/Lab09_ALU_with_Input_Register\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/Lab09_ALU_with_Input_Register/Lab09_ALU_with_Input_Register.xpr}
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+close_design
+open_run impl_1
+reset_run impl_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+import_files -fileset constrs_1 {{C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/btnC.xdc}}
+import_files -fileset constrs_1 {{C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/btnD.xdc}}
+import_files -fileset constrs_1 {{C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/btnU.xdc}}
+import_files -fileset constrs_1 {{C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/clock.xdc}}
+import_files -fileset constrs_1 {{C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/led.xdc}}
+import_files -fileset constrs_1 {{C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/switches.xdc}}
+reset_run impl_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+close_design
+reset_run impl_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1

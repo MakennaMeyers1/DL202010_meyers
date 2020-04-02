@@ -4,10 +4,10 @@
 
 module alu_test ();
 
-    reg [7:0] in0;
-    reg [7:0] in1;
-    reg [3:0] op;
-    wire [7:0] out;
+    reg [7:0]in0;
+    reg [7:0]in1;
+    reg [3:0]op;
+    wire [7:0]out;
     
     alu #(.N(8)) a(.in0(in0), .in1(in1), .op(op), .out(out));
     

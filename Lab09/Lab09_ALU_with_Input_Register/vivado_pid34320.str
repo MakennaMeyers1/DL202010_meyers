@@ -1,0 +1,930 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 34320
+License: Customer
+
+Current time: 	Thu Apr 02 07:31:04 CDT 2020
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 3840x2160
+Screen resolution (DPI): 240
+Available screens: 1
+Available disk space: 1,762 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=30
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Users/maken/Documents/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Users/maken/Documents/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	maken
+User home directory: C:/Users/maken
+User working directory: C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/Lab09_ALU_with_Input_Register
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Users/maken/Documents/Vivado
+HDI_APPROOT: C:/Users/maken/Documents/Vivado/2018.3
+RDI_DATADIR: C:/Users/maken/Documents/Vivado/2018.3/data
+RDI_BINDIR: C:/Users/maken/Documents/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/maken/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/maken/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/maken/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Users/maken/Documents/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/Lab09_ALU_with_Input_Register/vivado.log
+Vivado journal file location: 	C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/Lab09_ALU_with_Input_Register/vivado.jou
+Engine tmp dir: 	C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/Lab09_ALU_with_Input_Register/.Xil/Vivado-34320-DESKTOP-5LV72DU
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Users/maken/Documents/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/Users/maken/Documents/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Users/maken/Documents/Vivado/2018.3
+XILINX_VIVADO: C:/Users/maken/Documents/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Users/maken/Documents/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 588 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\maken\Documents\ELC Lab 2137\DL202010_meyers\Lab09\Lab09_ALU_with_Input_Register\Lab09_ALU_with_Input_Register.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/Lab09_ALU_with_Input_Register/Lab09_ALU_with_Input_Register.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/Lab09_ALU_with_Input_Register' 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/Lab09_ALU_with_Input_Register/Lab09_ALU_with_Input_Register.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/Lab09_ALU_with_Input_Register' 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Users/maken/Documents/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 124 MB (+127099kb) [00:00:11]
+// [Engine Memory]: 646 MB (+525715kb) [00:00:11]
+// [GUI Memory]: 137 MB (+7652kb) [00:00:11]
+// WARNING: HEventQueue.dispatchEvent() is taking  2597 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 672 MB. GUI used memory: 84 MB. Current time: 4/2/20, 7:31:08 AM CDT
+// Tcl Message: open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 699.125 ; gain = 91.863 
+// Project name: Lab09_ALU_with_Input_Register; location: C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/Lab09_ALU_with_Input_Register; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bx (cp)
+// [Engine Memory]: 680 MB (+2322kb) [00:00:16]
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (top_lab9.sv) elapsed time: 0.2s
+// Elapsed time: 403 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_lab9 (top_lab9.sv)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_lab9 (top_lab9.sv)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 285ms to process. Increasing delay to 2000 ms.
+// Elapsed time: 123 seconds
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // az (f, cp)
+// Elapsed time: 292 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// f (cp): Launch Runs: addNotify
+selectComboBox(PAResourceItoN.LaunchPanel_LAUNCH_DIRECTORY, "<Default Launch Directory>", 0); // e (a, f)
+// WARNING: HEventQueue.dispatchEvent() is taking  1059 ms.
+// Elapsed time: 231 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (f)
+// 'k' command handler elapsed time: 235 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 704 MB. GUI used memory: 87 MB. Current time: 4/2/20, 7:48:46 AM CDT
+// Elapsed time: 180 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// 'c' command handler elapsed time: 5 seconds
+selectButton("PAResourceQtoS.RunImplementation_THERE_NO_NETLIST_AVAILABLE_OK_Cancel", "Cancel"); // JButton (C, I)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs synth_1 -jobs 6 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Apr  2 07:51:56 2020] Launched synth_1... Run output will be captured here: C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/Lab09_ALU_with_Input_Register/Lab09_ALU_with_Input_Register.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 574ms to process. Increasing delay to 3000 ms.
+// ah (cp): Synthesis Completed: addNotify
+// Elapsed time: 50 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 6 
+// Tcl Message: [Thu Apr  2 07:52:51 2020] Launched impl_1... Run output will be captured here: C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/Lab09_ALU_with_Input_Register/Lab09_ALU_with_Input_Register.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 718ms to process. Increasing delay to 4000 ms.
+// ah (cp): Implementation Completed: addNotify
+// Elapsed time: 80 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cp): Launch Runs: addNotify
+selectComboBox(PAResourceItoN.LaunchPanel_LAUNCH_DIRECTORY, "Choose Location...", 1); // e (a, f)
+dismissFolderChooser();
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 17 seconds
+// [Engine Memory]: 719 MB (+5132kb) [00:23:35]
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cp)
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Thu Apr  2 07:54:32 2020] Launched impl_1... Run output will be captured here: C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/Lab09_ALU_with_Input_Register/Lab09_ALU_with_Input_Register.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_FAILED
+// ah (cp): Bitstream Generation Failed: addNotify
+// Elapsed time: 50 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ah (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 729 MB. GUI used memory: 91 MB. Current time: 4/2/20, 7:55:26 AM CDT
+// Elapsed time: 167 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// bx (cp):  Open Synthesized Design : addNotify
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7a35tcpg236-1 
+// HMemoryUtils.trashcanNow. Engine heap size: 905 MB. GUI used memory: 90 MB. Current time: 4/2/20, 7:58:16 AM CDT
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,027 MB. GUI used memory: 90 MB. Current time: 4/2/20, 7:58:19 AM CDT
+// [Engine Memory]: 1,032 MB (+290618kb) [00:27:24]
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 1,126 MB (+44332kb) [00:27:24]
+// Xgd.load filename: C:/Users/maken/Documents/Vivado/2018.3/data/parts/xilinx/artix7/devint/artix7/xc7a35t/xc7a35t.xgd; ZipEntry: xc7a35t_detail.xgd elapsed time: 0.5s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [GUI Memory]: 154 MB (+10319kb) [00:27:25]
+// Device: addNotify
+// DeviceView Instantiated
+// PAPropertyPanels.initPanels (top_lab9.sv) elapsed time: 0.2s
+// WARNING: HEventQueue.dispatchEvent() is taking  2838 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Device 21-403] Loading part xc7a35tcpg236-1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/btnC.xdc] 
+// Tcl Message: Finished Parsing XDC File [C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/btnC.xdc] Parsing XDC File [C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/btnD.xdc] 
+// Tcl Message: Finished Parsing XDC File [C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/btnD.xdc] Parsing XDC File [C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/btnU.xdc] 
+// Tcl Message: Finished Parsing XDC File [C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/btnU.xdc] Parsing XDC File [C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/clock.xdc] 
+// Tcl Message: Finished Parsing XDC File [C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/clock.xdc] Parsing XDC File [C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/led.xdc] 
+// Tcl Message: Finished Parsing XDC File [C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/led.xdc] Parsing XDC File [C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/switches.xdc] 
+// Tcl Message: Finished Parsing XDC File [C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/switches.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1038.277 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// [GUI Memory]: 172 MB (+10935kb) [00:27:27]
+// Device view-level: 0.0
+// Tcl Message: open_run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 1157.098 ; gain = 411.156 
+// 'dQ' command handler elapsed time: 12 seconds
+// Device view-level: 0.2
+// S (cp): Critical Messages: addNotify
+// Elapsed time: 12 seconds
+dismissDialog("Open Synthesized Design"); // bx (cp)
+// Device view-level: 0.0
+// RouteApi::initDelayMediator elapsed time: 11.9s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// HMemoryUtils.trashcanNow. Engine heap size: 1,554 MB. GUI used memory: 127 MB. Current time: 4/2/20, 7:58:37 AM CDT
+// Elapsed time: 14 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (cp)
+// [Engine Memory]: 1,574 MB (+410309kb) [00:27:46]
+closeView(PAResourceOtoP.PAViews_DEVICE, "Device"); // U
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15, true); // u (Q, cp) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// g (cp): Close Design: addNotify
+selectButton(PAResourceAtoD.ClosePlanner_YES, "Yes"); // a (g)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,593 MB. GUI used memory: 115 MB. Current time: 4/2/20, 7:58:56 AM CDT
+// Engine heap size: 1,593 MB. GUI used memory: 115 MB. Current time: 4/2/20, 7:58:56 AM CDT
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: DESIGN_CLOSE
+// bx (cp):  Open Implemented Design : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1330 ms.
+// Tcl Message: close_design 
+dismissDialog("Close Design"); // g (cp)
+// Tcl Message: open_run impl_1 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,644 MB. GUI used memory: 94 MB. Current time: 4/2/20, 7:58:59 AM CDT
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [Engine Memory]: 1,698 MB (+47216kb) [00:28:04]
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  1777 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 1694.703 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 1694.703 ; gain = 0.000 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1694.703 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Device view-level: 0.0
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// WARNING: HEventQueue.dispatchEvent() is taking  1488 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// [GUI Memory]: 183 MB (+2492kb) [00:28:10]
+// 'dQ' command handler elapsed time: 14 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  1513 ms.
+// Device view-level: 0.2
+// Device view-level: 0.0
+dismissDialog("Open Implemented Design"); // bx (cp)
+// [GUI Memory]: 201 MB (+9515kb) [00:28:15]
+selectTab((HResource) null, (HResource) null, "Power", 5); // aI (aF, cp)
+selectTab((HResource) null, (HResource) null, "DRC", 6); // aI (aF, cp)
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aI (aF, cp)
+// Elapsed time: 13 seconds
+selectTab((HResource) null, (HResource) null, "Reports", 3); // aI (aF, cp)
+// Elapsed time: 15 seconds
+selectTab((HResource) null, (HResource) null, "Log", 2); // aI (aF, cp)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aI (aF, cp)
+// Elapsed time: 91 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_lab9.sv", 2); // k (j, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("top_lab9.sv", 250, 469); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 15 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,776 MB. GUI used memory: 132 MB. Current time: 4/2/20, 8:02:37 AM CDT
+// [Engine Memory]: 1,814 MB (+32773kb) [00:31:43]
+// Elapsed time: 119 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aI (aF, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_lab9 (top_lab9.sv), a : alu (alu.sv)]", 3, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_lab9 (top_lab9.sv), a : alu (alu.sv)]", 3, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_lab9 (top_lab9.sv), reg1 : register (register.sv)]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_lab9 (top_lab9.sv), reg1 : register (register.sv)]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_lab9 (top_lab9.sv), reg1 : register (register.sv)]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_lab9 (top_lab9.sv), reg1 : register (register.sv)]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_lab9.sv", 2); // k (j, cp)
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "alu.sv", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "register.sv", 4); // k (j, cp)
+// Elapsed time: 53 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 6, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_2]", 7, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_2]", 7, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_2]", 7, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_2, alu_test (alu_test.sv)]", 8, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_2, alu_test (alu_test.sv)]", 8, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_2, alu_test (alu_test.sv)]", 8, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("alu_test.sv", 258, 272); // cl (w, cp)
+selectCodeEditor("alu_test.sv", 250, 293); // cl (w, cp)
+selectCodeEditor("alu_test.sv", 263, 385); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "alu.sv", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_lab9.sv", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "alu.sv", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "register.sv", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "alu.sv", 3); // k (j, cp)
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "alu_test.sv", 5); // k (j, cp)
+// Elapsed time: 241 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_lab9.sv", 2); // k (j, cp)
+// Elapsed time: 55 seconds
+selectCodeEditor("top_lab9.sv", 225, 347); // cl (w, cp)
+selectCodeEditor("top_lab9.sv", 324, 257); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("top_lab9.sv", 310, 416); // cl (w, cp)
+selectCodeEditor("top_lab9.sv", 286, 302); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("top_lab9.sv", 528, 419); // cl (w, cp)
+// Elapsed time: 20 seconds
+selectCodeEditor("top_lab9.sv", 444, 468); // cl (w, cp)
+selectCodeEditor("top_lab9.sv", 485, 496); // cl (w, cp)
+// Elapsed time: 25 seconds
+selectCodeEditor("top_lab9.sv", 328, 501); // cl (w, cp)
+selectCodeEditor("top_lab9.sv", 484, 502); // cl (w, cp)
+selectCodeEditor("top_lab9.sv", 261, 533); // cl (w, cp)
+selectCodeEditor("top_lab9.sv", 229, 534); // cl (w, cp)
+selectCodeEditor("top_lab9.sv", 63, 541); // cl (w, cp)
+selectCodeEditor("top_lab9.sv", 47, 555); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("top_lab9.sv", 265, 497); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("top_lab9.sv", 203, 224); // cl (w, cp)
+// Elapsed time: 131 seconds
+selectCodeEditor("top_lab9.sv", 164, 236); // cl (w, cp)
+selectCodeEditor("top_lab9.sv", 536, 226); // cl (w, cp)
+selectCodeEditor("top_lab9.sv", 496, 276); // cl (w, cp)
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1853 ms. Increasing delay to 3000 ms.
+// Elapsed time: 14 seconds
+selectCodeEditor("top_lab9.sv", 952, 376); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("top_lab9.sv", 630, 289); // cl (w, cp)
+// Elapsed time: 32 seconds
+selectCodeEditor("top_lab9.sv", 500, 346); // cl (w, cp)
+selectCodeEditor("top_lab9.sv", 428, 386); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("top_lab9.sv", 378, 382); // cl (w, cp)
+selectCodeEditor("top_lab9.sv", 1114, 459); // cl (w, cp)
+selectCodeEditor("top_lab9.sv", 397, 503); // cl (w, cp)
+// Elapsed time: 31 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 31 seconds
+selectCodeEditor("top_lab9.sv", 236, 308); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("top_lab9.sv", 395, 308); // cl (w, cp)
+typeControlKey((HResource) null, "top_lab9.sv", 'c'); // cl (w, cp)
+selectCodeEditor("top_lab9.sv", 146, 352); // cl (w, cp)
+typeControlKey((HResource) null, "top_lab9.sv", 'v'); // cl (w, cp)
+selectCodeEditor("top_lab9.sv", 246, 388); // cl (w, cp)
+selectCodeEditor("top_lab9.sv", 238, 388); // cl (w, cp)
+typeControlKey((HResource) null, "top_lab9.sv", 'v'); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 18 seconds
+selectCodeEditor("top_lab9.sv", 287, 140); // cl (w, cp)
+selectCodeEditor("top_lab9.sv", 608, 98); // cl (w, cp)
+selectCodeEditor("top_lab9.sv", 306, 146); // cl (w, cp)
+selectCodeEditor("top_lab9.sv", 412, 260); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 63 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// i (cp): Reset and Re-run: addNotify
+selectButton(RDIResource.BaseDialog_NO, "Run from Step: write_bitstream"); // a (i)
+// al (cp): Save Project: addNotify
+dismissDialog("Reset and Re-run"); // i (cp)
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bx (cp):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bx (cp):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // al (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// Tcl Message: launch_runs impl_1 -jobs 6 
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Apr  2 08:21:54 2020] Launched impl_1... Run output will be captured here: C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/Lab09_ALU_with_Input_Register/Lab09_ALU_with_Input_Register.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 13 seconds
+dismissDialog("Starting Design Runs"); // bx (cp)
+// Elapsed time: 19 seconds
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aI (aF, cp)
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 44 seconds
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aI (aF, cp)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// ah (cp): Implementation Completed: addNotify
+// Elapsed time: 12 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cp)
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Apr  2 08:23:15 2020] Launched impl_1... Run output will be captured here: C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/Lab09_ALU_with_Input_Register/Lab09_ALU_with_Input_Register.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_FAILED
+// ah (cp): Bitstream Generation Failed: addNotify
+// Elapsed time: 48 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ah (cp)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aI (aF, cp)
+// Elapsed time: 51 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "alu_test.sv", 5); // k (j, cp)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "alu.sv", 3); // k (j, cp)
+// Elapsed time: 28 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "register.sv", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "alu.sv", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "register.sv", 4); // k (j, cp)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "alu.sv", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_lab9.sv", 2); // k (j, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,849 MB. GUI used memory: 135 MB. Current time: 4/2/20, 8:32:37 AM CDT
+// Elapsed time: 440 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "alu_test.sv", 5); // k (j, cp)
+// Elapsed time: 56 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "register.sv", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "alu.sv", 3); // k (j, cp)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_lab9.sv", 2); // k (j, cp)
+selectCodeEditor("top_lab9.sv", 865, 73); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("top_lab9.sv", 452, 86); // cl (w, cp)
+// Elapsed time: 37 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "alu.sv", 3); // k (j, cp)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_lab9.sv", 2); // k (j, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  88902 ms.
+// Elapsed time: 657 seconds
+selectCodeEditor("top_lab9.sv", 233, 306); // cl (w, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  1560 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1197 ms. Increasing delay to 3591 ms.
+// Elapsed time: 34 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// i (cp): Reset and Re-run: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Reset and Re-run"); // a (i)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Reset and Re-run"); // i (cp)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -jobs 6 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Apr  2 08:47:35 2020] Launched impl_1... Run output will be captured here: C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/Lab09_ALU_with_Input_Register/Lab09_ALU_with_Input_Register.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 5 seconds
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// ah (cp): Implementation Completed: addNotify
+// Elapsed time: 122 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Implementation Completed"); // ah (cp)
+// Elapsed time: 43 seconds
+selectCodeEditor("top_lab9.sv", 230, 108); // cl (w, cp)
+// Elapsed time: 142 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 5, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 5, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 5, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 6, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, btnC.xdc]", 7, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 141 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, btnC.xdc]", 7, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_IMPORT_SRC, "Copy File Into Project"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_IMPORT_SRC
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -fileset constrs_1 {{C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/btnC.xdc}} 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, btnD.xdc]", 8, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_IMPORT_SRC, "Copy File Into Project"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_IMPORT_SRC
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -fileset constrs_1 {{C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/btnD.xdc}} 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, btnU.xdc]", 9, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_IMPORT_SRC, "Copy File Into Project"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_IMPORT_SRC
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, clock.xdc]", 10, false); // B (D, cp)
+// bx (cp):  Importing Sources : addNotify
+// Tcl Message: import_files -fileset constrs_1 {{C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/btnU.xdc}} 
+dismissDialog("Importing Sources"); // bx (cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, clock.xdc]", 10, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, clock.xdc]", 10, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_IMPORT_SRC, "Copy File Into Project"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_IMPORT_SRC
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -fileset constrs_1 {{C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/clock.xdc}} 
+// bx (cp):  Importing Sources : addNotify
+dismissDialog("Importing Sources"); // bx (cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, led.xdc]", 11, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_IMPORT_SRC, "Copy File Into Project"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_IMPORT_SRC
+// TclEventType: FILE_SET_CHANGE
+// bx (cp):  Importing Sources : addNotify
+// Tcl Message: import_files -fileset constrs_1 {{C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/led.xdc}} 
+dismissDialog("Importing Sources"); // bx (cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, switches.xdc]", 12, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_IMPORT_SRC, "Copy File Into Project"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_IMPORT_SRC
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -fileset constrs_1 {{C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/switches.xdc}} 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// al (cp): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bx (cp):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bx (cp):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // al (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // JButton (C, J)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (f)
+// 'c' command handler elapsed time: 13 seconds
+dismissDialog("Launch Runs"); // f (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (cp):  Resetting Runs : addNotify
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -jobs 6 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Apr  2 08:56:06 2020] Launched impl_1... Run output will be captured here: C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/Lab09_ALU_with_Input_Register/Lab09_ALU_with_Input_Register.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// ah (cp): Implementation Completed: addNotify
+// Elapsed time: 148 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cp): Launch Runs: addNotify
+// Elapsed time: 19 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 19 seconds
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cp)
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Thu Apr  2 08:58:58 2020] Launched impl_1... Run output will be captured here: C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/Lab09_ALU_with_Input_Register/Lab09_ALU_with_Input_Register.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_FAILED
+// ah (cp): Bitstream Generation Failed: addNotify
+// Elapsed time: 45 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ah (cp)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aI (aF, cp)
+// Elapsed time: 57 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "alu.sv", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "register.sv", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_lab9.sv", 2); // k (j, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,851 MB. GUI used memory: 135 MB. Current time: 4/2/20, 9:02:39 AM CDT
+// Elapsed time: 179 seconds
+selectCodeEditor("top_lab9.sv", 1888, 12); // cl (w, cp)
+selectCodeEditor("top_lab9.sv", 1872, 85); // cl (w, cp)
+// Elapsed time: 46 seconds
+selectCodeEditor("top_lab9.sv", 1207, 664); // cl (w, cp)
+// Elapsed time: 168 seconds
+selectCodeEditor("top_lab9.sv", 228, 306); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// i (cp): Reset and Re-run: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Reset and Re-run"); // a (i)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Reset and Re-run"); // i (cp)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -jobs 6 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Apr  2 09:07:52 2020] Launched impl_1... Run output will be captured here: C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/Lab09_ALU_with_Input_Register/Lab09_ALU_with_Input_Register.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 5 seconds
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// ah (cp): Implementation Completed: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  212088 ms.
+// Elapsed time: 504 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Thu Apr  2 09:16:20 2020] Launched impl_1... Run output will be captured here: C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/Lab09_ALU_with_Input_Register/Lab09_ALU_with_Input_Register.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_FAILED
+// ah (cp): Bitstream Generation Failed: addNotify
+// Elapsed time: 51 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ah (cp)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aI (aF, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,854 MB. GUI used memory: 136 MB. Current time: 4/2/20, 9:17:23 AM CDT
+// WARNING: HEventQueue.dispatchEvent() is taking  15465 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 15993 ms. Increasing delay to 4000 ms.
+// Elapsed time: 221 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "alu.sv", 3); // k (j, cp)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_lab9.sv", 2); // k (j, cp)
+// Elapsed time: 80 seconds
+selectCodeEditor("top_lab9.sv", 477, 347); // cl (w, cp)
+selectCodeEditor("top_lab9.sv", 316, 323); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("top_lab9.sv", 843, 189); // cl (w, cp)
+selectCodeEditor("top_lab9.sv", 425, 226); // cl (w, cp)
+selectCodeEditor("top_lab9.sv", 492, 355); // cl (w, cp)
+selectCodeEditor("top_lab9.sv", 538, 381); // cl (w, cp)
+selectCodeEditor("top_lab9.sv", 1205, 429); // cl (w, cp)
+selectCodeEditor("top_lab9.sv", 485, 470); // cl (w, cp)
+selectCodeEditor("top_lab9.sv", 1010, 467); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("top_lab9.sv", 542, 340); // cl (w, cp)
+selectCodeEditor("top_lab9.sv", 490, 337); // cl (w, cp)
+selectCodeEditor("top_lab9.sv", 55, 214); // cl (w, cp)
+// Elapsed time: 51 seconds
+selectCodeEditor("top_lab9.sv", 731, 246); // cl (w, cp)
+selectCodeEditor("top_lab9.sv", 354, 263); // cl (w, cp)
+selectCodeEditor("top_lab9.sv", 441, 225); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("top_lab9.sv", 450, 260); // cl (w, cp)
+// Elapsed time: 64 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 10, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "port;-;in0;-;;-;10;-;"); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 10, false, false, false, false, false, true); // ah (Q, cp) - Double Click
+// Schematic: addNotify
+// PAPropertyPanels.initPanels (in0) elapsed time: 0.4s
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 10, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 10, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "port;-;in0;-;;-;10;-;"); // ah (Q, cp)
+// [Engine Memory]: 1,917 MB (+12641kb) [01:54:44]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,917 MB. GUI used memory: 137 MB. Current time: 4/2/20, 9:25:41 AM CDT
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 10, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "port;-;out;-;;-;10;-;"); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 10, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream, DRC, Pin Planning, [DRC UCIO-1] Unconstrained Logical Port: 28 out of 28 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: in0[7:0], in1[7:0], op[3:0], and out[7:0].. ]", 11, false); // ah (Q, cp)
+selectButton(RDIResource.FilterToolBar_SHOW_ALL, "Show All"); // a (f, cp)
+// Elapsed time: 32 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 118, false); // ah (Q, cp)
+// Elapsed time: 76 seconds
+selectButton(PAResourceOtoP.ProjectTab_CLOSE_DESIGN, "Close Design"); // h (cQ, cp)
+// TclEventType: DESIGN_CLOSE
+// TclEventType: TIMING_RESULTS_UNLOAD
+// HMemoryUtils.trashcanNow. Engine heap size: 2,000 MB. GUI used memory: 100 MB. Current time: 4/2/20, 9:27:47 AM CDT
+// Engine heap size: 2,000 MB. GUI used memory: 101 MB. Current time: 4/2/20, 9:27:47 AM CDT
+// WARNING: HEventQueue.dispatchEvent() is taking  4367 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+// bx (cp):  Closing : addNotify
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Closing"); // bx (cp)
+// Elapsed time: 150 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "register.sv", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "alu.sv", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_lab9.sv", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "register.sv", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "alu.sv", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_lab9.sv", 1); // k (j, cp)
+selectCodeEditor("top_lab9.sv", 252, 498); // cl (w, cp)
+// Elapsed time: 60 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// i (cp): Reset and Re-run: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Reset and Re-run"); // a (i)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Reset and Re-run"); // i (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -jobs 6 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Apr  2 09:31:54 2020] Launched impl_1... Run output will be captured here: C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/Lab09_ALU_with_Input_Register/Lab09_ALU_with_Input_Register.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 6 seconds
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 29 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton("PAResourceQtoS.RunRun_TASK_HAS_ALREADY_COMPLETED_AND_UP_TO_DATE_Cancel", "Cancel"); // JButton (C, I)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton("PAResourceQtoS.RunRun_TASK_ALREADY_RUNNING_WOULD_YOU_LIKE_Cancel", "Cancel"); // JButton (C, I)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Implementation Completed: addNotify
+// Elapsed time: 96 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Thu Apr  2 09:34:16 2020] Launched impl_1... Run output will be captured here: C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/Lab09_ALU_with_Input_Register/Lab09_ALU_with_Input_Register.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_FAILED
+// ah (cp): Bitstream Generation Failed: addNotify
+// Elapsed time: 46 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ah (cp)
+// Elapsed time: 39 seconds
+selectCodeEditor("top_lab9.sv", 249, 524); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "alu.sv", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "register.sv", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_lab9.sv", 1); // k (j, cp)
+selectCodeEditor("top_lab9.sv", 347, 501); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_2, alu_test (alu_test.sv)]", 15, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_2, alu_test (alu_test.sv)]", 15, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// PAPropertyPanels.initPanels (sim_1) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 17, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, register_test (register_test.sv)]", 18, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, register_test (register_test.sv)]", 18, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, register_test (register_test.sv)]", 18, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_2, alu_test (alu_test.sv)]", 15, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, register_test (register_test.sv), r : register (register.sv)]", 19, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, register_test (register_test.sv), r : register (register.sv)]", 19, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_2, top_lab9 (top_lab9.sv)]", 16, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_2, top_lab9 (top_lab9.sv)]", 16, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("top_lab9.sv", 343, 512); // cl (w, cp)
+selectCodeEditor("top_lab9.sv", 339, 586); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "register_test.sv", 5); // k (j, cp)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "register_test.sv", 5, false, true); // k (j, cp) - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aF, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "register_test.sv", 5); // k (j, cp)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "register_test.sv", 5, false, true); // k (j, cp) - Double Click
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aF, cp)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "register.sv", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_lab9.sv", 1); // k (j, cp)
+// Elapsed time: 55 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "register_test.sv", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "alu_test.sv", 4); // k (j, cp)
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "register.sv", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_lab9.sv", 1); // k (j, cp)
+selectCodeEditor("top_lab9.sv", 335, 504); // cl (w, cp)
+// Elapsed time: 89 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "alu_test.sv", 4); // k (j, cp)
+// Elapsed time: 55 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_lab9.sv", 1); // k (j, cp)
+// Elapsed time: 39 seconds
+selectCodeEditor("top_lab9.sv", 232, 303); // cl (w, cp)
+selectCodeEditor("top_lab9.sv", 1068, 554); // cl (w, cp)
+selectCodeEditor("top_lab9.sv", 1142, 697); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "alu_test.sv", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "alu.sv", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_lab9.sv", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "alu.sv", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_lab9.sv", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "register.sv", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "alu.sv", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "register.sv", 3); // k (j, cp)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_lab9.sv", 1); // k (j, cp)
+// Elapsed time: 28 seconds
+selectCodeEditor("top_lab9.sv", 339, 507); // cl (w, cp)
+selectCodeEditor("top_lab9.sv", 344, 590); // cl (w, cp)
+// Elapsed time: 43 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 69 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// i (cp): Reset and Re-run: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Reset and Re-run"); // a (i)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Reset and Re-run"); // i (cp)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -jobs 6 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Apr  2 09:45:39 2020] Launched impl_1... Run output will be captured here: C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/Lab09_ALU_with_Input_Register/Lab09_ALU_with_Input_Register.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 7 seconds
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_STEP_COMPLETED
