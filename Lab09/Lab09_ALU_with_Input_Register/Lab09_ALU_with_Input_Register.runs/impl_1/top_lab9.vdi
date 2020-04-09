@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Thu Apr  2 11:24:24 2020
-# Process ID: 27500
+# Start of session at: Thu Apr  2 17:20:42 2020
+# Process ID: 38540
 # Current directory: C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/Lab09_ALU_with_Input_Register/Lab09_ALU_with_Input_Register.runs/impl_1
 # Command line: vivado.exe -log top_lab9.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_lab9.tcl -notrace
 # Log file: C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab09/Lab09_ALU_with_Input_Register/Lab09_ALU_with_Input_Register.runs/impl_1/top_lab9.vdi
@@ -14,7 +14,7 @@ Command: open_checkpoint top_lab9_routed.dcp
 
 Starting open_checkpoint Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 272.648 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 272.023 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2018.3
@@ -27,15 +27,15 @@ INFO: [Project 1-853] Binary constraint restore complete.
 Reading XDEF placement.
 Reading placer database...
 Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 1126.875 ; gain = 2.566
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.231 . Memory (MB): peak = 1126.383 ; gain = 0.164
 Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 1126.875 ; gain = 2.566
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1126.875 ; gain = 0.000
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.232 . Memory (MB): peak = 1126.383 ; gain = 0.164
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1126.383 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Project 1-604] Checkpoint was created with Vivado v2018.3 (64-bit) build 2405991
-open_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1126.875 ; gain = 854.227
+open_checkpoint: Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1126.383 ; gain = 854.359
 Command: write_bitstream -force top_lab9.bit
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
@@ -68,5 +68,5 @@ INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK 
 INFO: [Common 17-83] Releasing license: Implementation
 22 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1592.527 ; gain = 465.652
-INFO: [Common 17-206] Exiting Vivado at Thu Apr  2 11:24:52 2020...
+write_bitstream: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1599.180 ; gain = 472.797
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  2 17:21:26 2020...

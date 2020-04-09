@@ -67,7 +67,7 @@
 
 
 \section*{Summary}
- 
+ This lab incorporates registers and an Arithmetic Logic Unit (ALU) to build a small calculator. The code used can be found in Listings \ref{code:register}, \ref{code:register_test}, \ref{code:alu}, \ref{code:alu_test}, and \ref{code:top_module}, and examples of the calculator use can be found in Figures \ref{fig:add_step_1} through \ref{fig:xor_step_3}.
 
 
 \section*{Results}
@@ -115,17 +115,118 @@
 	\caption{ALU Simulation Waveform}
 	\label{fig:alu_sim_wave_Screenshot}			
 \end{figure}
+\clearpage 
+
+\section*{Op 0: ADD}
+
+\begin{figure}[ht]\centering
+	\includegraphics[width=0.8\textwidth,trim=0cm 0cm 0cm 0cm,clip]{add_step_1}
+	\caption{Step 1 of ADD (10100)}
+	\label{fig:add_step_1}			
+\end{figure}
+
+\begin{figure}[ht]\centering
+	\includegraphics[width=0.8\textwidth,trim=0cm 0cm 0cm 0cm,clip]{add_step_2}
+	\caption{Step 2 of ADD (set)}
+	\label{fig:add_step_2}			
+\end{figure}
+
+\begin{figure}[ht]\centering
+	\includegraphics[width=0.8\textwidth,trim=0cm 0cm 0cm 0cm,clip]{add_step_3}
+	\caption{Step 3 of ADD (add 111010 to get 10001110)}
+	\label{fig:add_step_3}			
+\end{figure}
 \clearpage
 
+\section*{Op 1: SUB}
+
+\begin{figure}[ht]\centering
+	\includegraphics[width=0.8\textwidth,trim=0cm 0cm 0cm 0cm,clip]{sub_step_1}
+	\caption{Step 1 of SUB (start with 1000)}
+	\label{fig:sub_step_1}			
+\end{figure}
+
+\begin{figure}[ht]\centering
+	\includegraphics[width=0.8\textwidth,trim=0cm 0cm 0cm 0cm,clip]{sub_step_2}
+	\caption{Step 2 of SUB (set)}
+	\label{fig:sub_step_2}			
+\end{figure}
+
+\begin{figure}[ht]\centering
+	\includegraphics[width=0.8\textwidth,trim=0cm 0cm 0cm 0cm,clip]{sub_step_3}
+	\caption{Step 3 of SUB (subtract 111)}
+	\label{fig:sub_step_3}			
+\end{figure}
+\clearpage
+
+\section*{Op 2: AND}
+
+\begin{figure}[ht]\centering
+	\includegraphics[width=0.8\textwidth,trim=0cm 0cm 0cm 0cm,clip]{and_step_1}
+	\caption{Step 1 of AND (start with 101)}
+	\label{fig:and_step_1}			
+\end{figure}
+
+\begin{figure}[ht]\centering
+	\includegraphics[width=0.8\textwidth,trim=0cm 0cm 0cm 0cm,clip]{and_step_2}
+	\caption{Step 2 of AND (introduce 111 to get 101)}
+	\label{fig:and_step_2}			
+\end{figure}
+\clearpage
+
+\section*{Op 3: OR}
+
+\begin{figure}[ht]\centering
+	\includegraphics[width=0.8\textwidth,trim=0cm 0cm 0cm 0cm,clip]{or_step_1}
+	\caption{Step 1 of OR (start with 1)}
+	\label{fig:or_step_1}			
+\end{figure}
+
+\begin{figure}[ht]\centering
+	\includegraphics[width=0.8\textwidth,trim=0cm 0cm 0cm 0cm,clip]{or_step_2}
+	\caption{Step 2 of OR (set)}
+	\label{fig:or_step_2}			
+\end{figure}
+
+\begin{figure}[ht]\centering
+	\includegraphics[width=0.8\textwidth,trim=0cm 0cm 0cm 0cm,clip]{or_step_3}
+	\caption{Step 3 of OR (introduce 1 to get 1)}
+	\label{fig:or_step_3}			
+\end{figure}
+\clearpage
+
+\section*{Op 4: XOR}
+
+\begin{figure}[ht]\centering
+	\includegraphics[width=0.8\textwidth,trim=0cm 0cm 0cm 0cm,clip]{xor_step_1}
+	\caption{Step 1 of XOR (start with 1)}
+	\label{fig:xor_step_1}			
+\end{figure}
+
+\begin{figure}[ht]\centering
+	\includegraphics[width=0.8\textwidth,trim=0cm 0cm 0cm 0cm,clip]{xor_step_2}
+	\caption{Step 2 of XOR (set)}
+	\label{fig:xor_step_2}			
+\end{figure}
+
+\begin{figure}[ht]\centering
+	\includegraphics[width=0.8\textwidth,trim=0cm 0cm 0cm 0cm,clip]{xor_step_3}
+	\caption{Step 3 of XOR (introduce 1 to get 0)}
+	\label{fig:xor_step_3}			
+\end{figure}
+\clearpage
+			
 \section*{Code}
 
 \Verilog[caption=Register Module,label=code:register]{register.sv}
 
-\Verilog[caption=Register Test Bench,label=code:register test]{register_test.sv}
+\Verilog[caption=Register Test Bench,label=code:register_test]{register_test.sv}
 
 \Verilog[caption=ALU Module,label=code:alu]{alu.sv}
 
-\Verilog[caption=ALU Test Bench,label=code:alu test]{alu_test.sv}
+\Verilog[caption=ALU Test Bench,label=code:alu_test]{alu_test.sv}
+
+\Verilog[caption=Top Module,label=code:top_module]{top_lab9.sv}
 
 \end{document}
 
