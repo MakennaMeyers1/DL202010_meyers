@@ -1,14 +1,10 @@
 Vivado Simulator 2018.3
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Users/maken/Documents/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 5f708cec601e43f480bd98cf2541bc40 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot counter_test_behav xil_defaultlib.counter_test xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Users/maken/Documents/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 5f708cec601e43f480bd98cf2541bc40 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sseg4_TDM_behav xil_defaultlib.sseg4_TDM xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'count' [C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab10_new/Lab10_new_7seg_TDM/Lab10_new_7seg_TDM.srcs/sim_1/new/counter_test.sv:11]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'sel' [C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab10_new/Lab10_new_7seg_TDM/Lab10_new_7seg_TDM.srcs/sources_1/new/sseg4_TDM.sv:31]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'tick' [C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab10_new/Lab10_new_7seg_TDM/Lab10_new_7seg_TDM.srcs/sources_1/new/sseg4_TDM.sv:36]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'clk' [C:/Users/maken/Documents/ELC Lab 2137/DL202010_meyers/Lab10_new/Lab10_new_7seg_TDM/Lab10_new_7seg_TDM.srcs/sources_1/new/sseg4_TDM.sv:37]
 Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.counter(N=4)
-Compiling module xil_defaultlib.counter_test
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot counter_test_behav
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

@@ -25,6 +25,26 @@ module counter_test ();
     en = 1; rst = 0; #10;
     en = 1; rst = 0; #10;
     en = 1; rst = 0; #10;
+    en = 1; rst = 0; #10;
+    en = 1; rst = 0; #10;
+    en = 1; rst = 0; #10;
+    en = 1; rst = 0; #10;
+    en = 1; rst = 0; #10;
+    en = 1; rst = 0; #10;
+    en = 1; rst = 0; #10;
+    en = 1; rst = 0; #10;
+    en = 1; rst = 0; #10;
+    en = 1; rst = 0; #10;
+    en = 1; rst = 0; #10;
+    en = 1; rst = 0; #10;
+    en = 1; rst = 0; #10;
+    en = 1; rst = 0; #10;
+    en = 1; rst = 0; #10;
+    en = 1; rst = 0; #10;
+    en = 1; rst = 0; #10;
+    en = 1; rst = 0; #10;
+    en = 1; rst = 0; #10;
+    en = 1; rst = 0; #10;
     $finish ;
     end
 endmodule
