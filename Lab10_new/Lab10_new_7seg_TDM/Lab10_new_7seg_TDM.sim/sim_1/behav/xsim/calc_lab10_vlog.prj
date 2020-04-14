@@ -1,0 +1,20 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../Lab10_new_7seg_TDM.srcs/sources_1/new/Add3.sv" \
+"../../../../Lab10_new_7seg_TDM.srcs/sources_1/new/BCDmod11.sv" \
+"../../../../Lab10_new_7seg_TDM.srcs/sources_1/new/alu.sv" \
+"../../../../Lab10_new_7seg_TDM.srcs/sources_1/new/an_decode.sv" \
+"../../../../Lab10_new_7seg_TDM.srcs/sources_1/new/counter.sv" \
+"../../../../Lab10_new_7seg_TDM.srcs/sources_1/new/mux2.sv" \
+"../../../../Lab10_new_7seg_TDM.srcs/sources_1/new/mux4.sv" \
+"../../../../Lab10_new_7seg_TDM.srcs/sources_1/new/register.sv" \
+"../../../../Lab10_new_7seg_TDM.srcs/sources_1/new/sseg4_TDM.sv" \
+"../../../../Lab10_new_7seg_TDM.srcs/sources_1/new/sseg_decoder.sv" \
+"../../../../Lab10_new_7seg_TDM.srcs/sources_1/new/top_lab_9.sv" \
+"../../../../Lab10_new_7seg_TDM.srcs/sources_1/new/calc_lab10.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
