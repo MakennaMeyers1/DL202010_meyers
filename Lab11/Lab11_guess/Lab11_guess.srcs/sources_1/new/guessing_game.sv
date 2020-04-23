@@ -4,7 +4,7 @@
 
 module guessing_game #( parameter N =21)
 
-    ( input btnU, btnD, btnL, btnR, btnC, clk, en,
+    ( input btnU, btnD, btnL, btnR, btnC, clk,
     input [15:0]sw,
     
     output [6:0]seg,
@@ -16,7 +16,7 @@ module guessing_game #( parameter N =21)
     wire db1_out;
     wire db2_out;
     wire db3_out;
-    wire [3:0]y;
+    wire [7:0]y;
     wire win;
     wire lose;
     wire mux_out;
@@ -24,8 +24,6 @@ module guessing_game #( parameter N =21)
     wire counter_tick;
     wire tick;
     wire b_in;
-    
-    assign b_in = {db3_out, db2_out, db1_out, db0_out};
    
     debounce #(.N(21)) db0(.clk(clk), .reset(btnC), .in(btnU), .out(db0_out));
     debounce #(.N(21)) db1(.clk(clk), .reset(btnC), .in(btnD), .out(db1_out));
@@ -33,14 +31,16 @@ module guessing_game #( parameter N =21)
     debounce #(.N(21)) db3(.clk(clk), .reset(btnC), .in(btnR), .out(db3_out));
     
     guess_FSM #(.N(21)) gfsm(.b(b_in), 
-                             .y({{an[0], seg[6]}, {an[0], seg[5]}, {an[0], seg[1]}, {an[0], seg[0]}}), 
+                             .y({seg[6], seg[5], seg[1], seg[0]}),
                              .win(led[1]), .lose(led[0]), 
                              .clk(mux_out), .reset(btnC));
                    
-    counter #(.N(1)) counter(.clk(clk), .en(1), .rst(btnC), .count(counter_out), .tick(counter_tick));
+    counter #(.N(8)) counter(.clk(clk), .en(1), .rst(btnC), .count(counter_out), .tick(counter_tick));
     
-    mux_2 #(.N(1)) mux_guess(.in0(counter_out), .in1(clk), .out(mux_out), .sel(sw[0])); 
+    mux_2 #(.N(8)) mux_guess(.in0(counter_out), .in1(clk), .out(mux_out), .sel(sw[0])); 
     
-    assign led[15:3] = 0;
+    assign b_in = {db3_out, db2_out, db1_out, db0_out};
+    assign an = 4'b1110;
+    assign led[15:2] = 0;
    
 endmodule
