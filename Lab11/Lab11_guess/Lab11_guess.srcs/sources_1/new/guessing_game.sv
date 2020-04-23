@@ -9,8 +9,7 @@ module guessing_game #( parameter N =21)
     
     output [6:0]seg,
     output [3:0]an,
-    output [15:0]led,
-    output dp
+    output [15:0]led
 );
 
     wire db0_out;
@@ -30,9 +29,12 @@ module guessing_game #( parameter N =21)
     debounce #(.N(21)) db1(.clk(clk), .reset(btnC), .in(btnD), .out(db1_out));
     debounce #(.N(21)) db2(.clk(clk), .reset(btnC), .in(btnL), .out(db2_out));
     debounce #(.N(21)) db3(.clk(clk), .reset(btnC), .in(btnR), .out(db3_out));
+    
     guess_FSM #(.N(21)) gfsm(.b( {db3_out, db2_out, db1_out, db0_out}), .y(y), .win(win), .lose(lose),
                    .clk(mux_out), .reset(btnC));
+                   
     counter #(.N(1)) counter(.clk(clk), .en(1), .rst(btnC), .count(counter_out), .tick(counter_tick));
+    
     mux_2 #(.N(1)) mux_guess(.in0(counter_out), .in1(clk), .out(mux_out), .sel(sw[0])); 
     
     
