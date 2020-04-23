@@ -1,0 +1,4 @@
+Running: xsim.dir/guess_FSM_test_behav/xsimk.exe -simmode gui -wdb guess_FSM_test_behav.wdb -simrunnum 0 -socket 56385
+Design successfully loaded
+Design Loading Memory Usage: 4872 KB (Peak: 4872 KB)
+Design Loading CPU Usage: 15 ms
